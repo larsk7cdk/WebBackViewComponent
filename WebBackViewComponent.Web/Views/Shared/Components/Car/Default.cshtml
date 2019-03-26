@@ -1,0 +1,23 @@
+﻿@model WebBackViewComponent.Web.Models.CarViewModel
+
+<div class="card">
+    <div class="card-header">
+        <h5>
+            @Model.Type <span style="font-size: 75%">@Model.Model</span>
+        </h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="@Model.Image" asp-append-version="true" style="max-height: 200px; max-width: 200px"/>
+            </div>
+            <div class="col-md-9 mt-3 mt-md-0">
+                <div>@Model.Year</div>
+                <div>@Model.Kilometers.ToString("N0") km.</div>
+                <div>
+                    <span class="font-weight-bold">@Model.Price.ToString("C0")</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

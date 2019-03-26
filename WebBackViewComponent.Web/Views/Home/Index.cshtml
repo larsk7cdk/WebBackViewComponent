@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebBackViewComponent.Web.Models.CarViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="my-4">Biler til salg</h1>
+
+@foreach (var car in Model)
+{
+    <div class="mb-3 w-100">
+        @await Component.InvokeAsync("Car", car)
+    </div>
+}
