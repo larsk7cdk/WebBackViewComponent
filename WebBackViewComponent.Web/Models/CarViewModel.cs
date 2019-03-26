@@ -2,6 +2,7 @@
 {
     public class CarViewModel
     {
+        public string Header { get; set; }
         public string Type { get; set; }
         public string Model { get; set; }
         public int Kilometers { get; set; }

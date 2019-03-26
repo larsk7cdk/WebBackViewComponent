@@ -15,6 +15,7 @@ namespace WebBackViewComponent.Web.Services
         {
             new CarViewModel
             {
+                Header = "Velholdt og som ny",
                 Type = "BMW 320d",
                 Model = "2,0 Gran Turismo aut. 5d",
                 Year = 2017,
@@ -24,6 +25,7 @@ namespace WebBackViewComponent.Web.Services
             },
             new CarViewModel
             {
+                Header = "Bilen til hele familien",
                 Type = "Ford Focus",
                 Model = "1,0 SCTi 125 5d",
                 Year = 2017,
@@ -33,6 +35,7 @@ namespace WebBackViewComponent.Web.Services
             },
             new CarViewModel
             {
+                Header = "Velholdt og nysynet",
                 Type = "Skoda Citigo",
                 Model = "1,0 60 Style GreenTec 5d",
                 Year = 2016,

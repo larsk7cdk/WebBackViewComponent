@@ -2,9 +2,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h5>
-            @Model.Type <span style="font-size: 75%">@Model.Model</span>
-        </h5>
+        <h3>@Model.Header</h3>
     </div>
     <div class="card-body">
         <div class="row">
@@ -12,6 +10,9 @@
                 <img src="@Model.Image" asp-append-version="true" style="max-height: 200px; max-width: 200px"/>
             </div>
             <div class="col-md-9 mt-3 mt-md-0">
+                <h5>
+                    @Model.Type <span style="font-size: 75%">@Model.Model</span>
+                </h5>
                 <div>@Model.Year</div>
                 <div>@Model.Kilometers.ToString("N0") km.</div>
                 <div>
